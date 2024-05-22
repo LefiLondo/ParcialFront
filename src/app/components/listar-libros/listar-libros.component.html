@@ -1,0 +1,25 @@
+<h2>Lista de Libros</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Autor</th>
+      <th>Fecha de Escritura</th>
+      <th>Número de Edición</th>
+      <th>Precio</th>
+      <th>Tipo</th>
+      <th>Fama del Escritor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let libro of libros">
+      <td>{{ libro.nombre }}</td>
+      <td>{{ libro.autor }}</td>
+      <td>{{ libro.fechaDeEscritura }}</td>
+      <td>{{ libro.numeroDeEdicion }}</td>
+      <td>{{ libro.precio }}</td>
+      <td>{{ libro.tipo }}</td>
+      <td>{{ libro.famaEscritor }}</td>
+    </tr>
+  </tbody>
+</table>
